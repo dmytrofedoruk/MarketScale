@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "framer-motion": "^11.1.7",
-    // "gsap": "file:gsap-bonus.tgz",
     "include-media": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
