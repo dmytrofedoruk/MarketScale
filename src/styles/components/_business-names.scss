@@ -1,0 +1,108 @@
+.building-tooltips {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .convention-center,
+  .corporate-office,
+  .healthcare,
+  .manufacturing,
+  .ports,
+  .retail {
+    width: 15%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    position: absolute;
+    top: 14%;
+    left: 12.5%;
+    cursor: pointer;
+    z-index: 1000;
+
+    &:hover {
+      .convention-center-tooltip,
+      .corporate-office-tooltip,
+      .healthcare-tooltip,
+      .manufacturing-tooltip,
+      .ports-tooltip,
+      .retail-tooltip {
+        background-color: #3c3c3c;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .corporate-office {
+    top: 20%;
+    left: 40%;
+    transform: translateX(-50%);
+    height: 20%;
+  }
+
+  .healthcare {
+    top: 10%;
+    left: 60%;
+    transform: translateX(-50%);
+    height: 15%;
+  }
+
+  .manufacturing {
+    top: auto;
+    bottom: 20%;
+    left: 20%;
+    transform: translateX(-50%);
+    height: 20%;
+  }
+
+  .ports {
+    top: auto;
+    bottom: 5%;
+    left: 40%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 20%;
+  }
+
+  .retail {
+    top: 30%;
+
+    left: 60%;
+    transform: translateX(-50%);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 15%;
+  }
+
+  .tooltip,
+  .convention-center-tooltip,
+  .corporate-office-tooltip,
+  .healthcare-tooltip,
+  .manufacturing-tooltip,
+  .ports-tooltip,
+  .retail-tooltip {
+    background-color: #070707;
+    color: #fff;
+    font-family: $verizonBold;
+    padding: 0.5rem 2rem;
+    font-size: 1vw;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 200;
+    transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1),
+      background-color 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
