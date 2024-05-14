@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import useBearStore from "../context/useStore";
 import { AnimatePresence, motion as m } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import gsap from "gsap";
+// import gsap from "gsap";
 
 // Scenes
 import ConventionCenter from "./ConventionCenter";
@@ -65,18 +65,18 @@ const Home = () => {
     console.log("CurrentPage home", currentPage)
     if(currentPage == 'home'){
       setActiveVideoIndex(0);
-      gsap.to([".building-tooltips", ".business-outcome-buttons"], {
-        stagger: 0.1,
-        opacity: 1,
-      });
+      // gsap.to([".building-tooltips", ".business-outcome-buttons"], {
+      //   stagger: 0.1,
+      //   opacity: 1,
+      // });
     }
   }, [currentPage]);
 
   const nextVideoIndexHandler = (index) => {
-    gsap.to([".building-tooltips", ".business-outcome-buttons", ".business-outcome-image"], {
-      stagger: 0.1,
-      opacity: 0,
-    });
+    // gsap.to([".building-tooltips", ".business-outcome-buttons", ".business-outcome-image"], {
+    //   stagger: 0.1,
+    //   opacity: 0,
+    // });
     
     // setIsSequenceStarted(false);
     console.log('activeVideoIndex :',activeVideoIndex);

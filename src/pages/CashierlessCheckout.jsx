@@ -10,7 +10,7 @@ import {
 import { files, subtitleFiles } from "../utils/videoData";
 import { findVideoIndex } from "../utils/helpers";
 import { useNavigate } from "react-router-dom";
-import gsap from "gsap";
+// import gsap from "gsap";
 
 const CashierlessCheckout = () => {
   const navigate = useNavigate();
@@ -67,10 +67,10 @@ const CashierlessCheckout = () => {
   // }, [selectedFiles]);
 
   useEffect(() => {
-    gsap.to(".business-outcome-buttons", {
-      stagger: 0.1,
-      opacity: 1,
-    });
+    // gsap.to(".business-outcome-buttons", {
+    //   stagger: 0.1,
+    //   opacity: 1,
+    // });
     if (currentPage == "Cashierless-Checkout") {
       setActiveVideoIndex(1);
       videoRefs.current[1]?.play();

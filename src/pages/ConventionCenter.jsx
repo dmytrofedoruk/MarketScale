@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, lazy } from "react";
 import { useNavigate } from "react-router-dom";
 import useBearStore from "../context/useStore";
 import { AnimatePresence, motion as m } from "framer-motion";
-import gsap from "gsap";
+// import gsap from "gsap";s
 import MultiCarrier from "./MultiCarrier";
 import CashierlessCheckout from "./CashierlessCheckout";
 import AcceleratedAccess from "./AcceleratedAccess";
@@ -57,9 +57,9 @@ const ConventionCenter = (props) => {
     console.log("CurrentPage", currentPage)
     if(currentPage == "convention"){
       setActiveVideoIndex(1);
-      gsap.to([".business-outcome-buttons"], {
-        opacity: 1,
-      });
+      // gsap.to([".business-outcome-buttons"], {
+      //   opacity: 1,
+      // });
     }
     // MultiCarrierLazy.preload();
     // setSelectedFiles([
@@ -78,10 +78,10 @@ const ConventionCenter = (props) => {
 
 
   const backHandler = () => {
-    gsap.to(".business-outcome-buttons", {
-      stagger: 0.1,
-      opacity: 0,
-    });
+    // gsap.to(".business-outcome-buttons", {
+    //   stagger: 0.1,
+    //   opacity: 0,
+    // });
     videoRefs.current[activeVideoIndex].pause();
     setActiveVideoIndex(0);
 
@@ -100,10 +100,10 @@ const ConventionCenter = (props) => {
     setActiveVideoIndex(currentVideoIndex)
     videoRefs.current[currentVideoIndex].play()
 
-    gsap.to('.business-outcome-buttons', {
-      stagger: 0.1,
-      opacity: 0,
-    })
+    // gsap.to('.business-outcome-buttons', {
+    //   stagger: 0.1,
+    //   opacity: 0,
+    // })
 
     videoRefs.current[currentVideoIndex].addEventListener('ended', () => {
       setSelectedFiles([])

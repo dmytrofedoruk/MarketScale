@@ -9,7 +9,7 @@ import {
 import { files, subtitleFiles } from "../utils/videoData";
 import { findVideoIndex } from "../utils/helpers";
 import { useNavigate } from "react-router-dom";
-import gsap from "gsap";
+// import gsap from "gsap";
 
 const MultiCarrier = (props) => {
   const navigate = useNavigate();
@@ -72,10 +72,10 @@ const MultiCarrier = (props) => {
   videoRefs.current[1]?.play();
   
   useEffect(() => {
-    gsap.to(".business-outcome-buttons", {
-      stagger: 0.1,
-      opacity: 1,
-    });
+    // gsap.to(".business-outcome-buttons", {
+    //   stagger: 0.1,
+    //   opacity: 1,
+    // });
     console.log(" multi care:",currentPage == "Multi-Carrier");
     if (currentPage == "Multi-Carrier") {
       console.log("currentPage multi care block:",currentPage);

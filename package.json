@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@gsap/react": "^2.1.1",
     "framer-motion": "^11.1.7",
     "include-media": "^2.0.0",
     "react": "^18.2.0",
