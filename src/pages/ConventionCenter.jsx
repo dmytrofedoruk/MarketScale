@@ -141,7 +141,8 @@ const ConventionCenter = (props) => {
                 index === activeVideoIndex ? "visible" : "hidden"
               }`}
             >
-              <source src={`/videos/${video}`} type="video/mp4" />
+              <source src={`https://d3l2yqxs32foyy.cloudfront.net/videos/${video}`} type="video/mp4" />
+              {/* <source src={`/videos/${video}`} type="video/mp4" /> */}
               {showCaption && (
                 <track
                   default

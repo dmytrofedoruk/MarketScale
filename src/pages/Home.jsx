@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import useBearStore from "../context/useStore";
 import { AnimatePresence, motion as m } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+// const cloudFrontUrl = "https://d3l2yqxs32foyy.cloudfront.net/videos/";
 // import gsap from "gsap";
 
 // Scenes
@@ -128,7 +129,8 @@ const Home = () => {
                 index === activeVideoIndex &&  currentPage == 'home' ? "visible" : "hidden"
               }`}
             >
-              <source src={`/videos/${video}`} type="video/mp4" />
+              <source src={`https://d3l2yqxs32foyy.cloudfront.net/videos/${video}`} type="video/mp4" />
+              {/* <source src={`/videos/${video}`} type="video/mp4" /> */}
               {showCaption && (
                 <track
                   default

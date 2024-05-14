@@ -209,7 +209,8 @@ const CashierlessCheckout = () => {
                 index === activeVideoIndex && currentPage == 'Cashierless-Checkout' ? "visible" : "hidden"
               }`}
             >
-              <source src={`/videos/${video}`} type="video/mp4" />
+              <source src={`https://d3l2yqxs32foyy.cloudfront.net/videos/${video}`} type="video/mp4" />
+              {/* <source src={`/videos/${video}`} type="video/mp4" /> */}
               {subtitleFiles
                 .filter((subtitle) => subtitle.startsWith(video.split(".")[0]))
                 .map(
