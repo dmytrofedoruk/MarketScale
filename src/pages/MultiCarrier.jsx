@@ -46,28 +46,6 @@ const MultiCarrier = (props) => {
     // setSelectedFiles(videoNames.map(name => files[findVideoIndex(name)]));
   // }; // prettier-ignore
 
-
-  // const selectedFiles = [
-  //   "FROM_MultiCarrier.mp4", "Carri3r.mp4", "SpottyConnectivity_Infinite.mp4",
-  //   "TO_DroppedCalls.mp4", "CallsDropped.mp4", "FROM_MultiCarrier.mp4",
-  //   "TO_LimitedData.mp4", "DataAccess.mp4", "FROM_LimitedData.mp4",
-  //   "TO_DeviceLatency.mp4", "LatencyDevice.mp4", "FROM_DeviceLatency.mp4",
-  //   "TO_ReducedSecurity.mp4", "SecurityReduced.mp4", "FROM_ReducedSecurity.mp4",
-  //   "TO_SlowIdentity.mp4", "IdentitySlow.mp4", "FROM_SlowIdentity.mp4",
-  //   "VerizonNeutralHost_Infinite", "VerizonNeutralHost.mp4",
-  //   "PrivateNetwork_Infinite.mp4", "PrivateNetwork.mp4",
-  // ];
-  
-  // useEffect(() => {
-  //   // Preload and play the video immediately
-  //   }, []);
-  
-    // Rest of your component code...
-
-  // useEffect(() => {
-  //   // setupSelectedFiles();
-  //   setActiveVideoIndex(1);
-  // }, []);
   console.log(" outside useeffect");
   videoRefs.current[1]?.play();
   
